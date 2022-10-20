@@ -1,0 +1,233 @@
+body{
+  background-image: url(./image/cats.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: 'Roboto Slab', serif;
+  color: #f3f3f3;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+h2 {
+  padding: 0 0 30px 0;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 500px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.processos img:hover {
+  animation: efeito;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes efeito {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.processos .minhas-informacoes {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.processos .minhas-informacoes img {
+  border-radius: 10%;
+  margin: 15px;
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.processos .nome {
+  font-size: 26px;
+}
+
+.processos .follow {
+  font-size: 20px;
+  color: #2d0bc5;
+}
+
+.processos .conteudos {
+  margin: 15px;
+}
+
+.processos .abas {
+  display: flex;
+  gap: 10px;
+}
+
+.processos .informacao-abas {
+  font-size: 15px;
+}
+
+progress {
+  margin-left: 50px;
+  
+}
+
+.processos .informacao-abas .informacao-da-aba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 180px;
+  padding-bottom: 10px;
+  overflow-y: auto;
+}
+
+.informacao-da-aba li a{
+  width: 200px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.informacao-da-aba li:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.informacao-da-aba li a {
+  opacity: 0.8;
+}
+
+.informacao-da-aba .estoque li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .vendas li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .caixa li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .garantia li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .academia li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .extras li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .treinamento li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.informacao-da-aba .termos li {
+  background-color: #1d87bd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+progress {
+  width: 100px;
+}
+
+.container {
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.container .progress-bar-atendimento {
+  position: absolute;
+  height: 100%;
+  background-color: #0fd439;
+  animation: progress-animation95 5s infinite;
+}
+
+.progress-bar-trocavarejo, .progress-bar-trocaatacado {
+  position: absolute;
+  height: 100%;
+  background-color: #0fd439;
+  animation: progress-animation35 5s infinite;
+}
+
+.progress-bar-varejo, .progress-bar-atacado {
+  position: absolute;
+  height: 100%;
+  background-color: #0fd439;
+  animation: progress-animation50 5s infinite;
+}
+
+@keyframes progress-animation50 {
+  0% { width: 0%;}
+  50% { width: 50%;}
+}
+
+@keyframes progress-animation35 {
+  0% { width: 0%;}
+  35% { width: 35%;}
+}
+
+@keyframes progress-animation70 {
+  0% { width: 0%;}
+  70% { width: 70%;}
+}
+
+@keyframes progress-animation95 {
+  0% { width: 0%;}
+  95% { width: 95%;}
+}
+
+@keyframes progress-animation100 {
+  0% { width: 0%;}
+  100% { width: 100%;}
+}
