@@ -1,8 +1,10 @@
 body{
-  background-image: url(./image/cats.jpg);
+  background-image: url(./image/Capa.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position-x: center;
+  background-position-y: 55.6%;
 
   font-family: 'Roboto Slab', serif;
   color: #f3f3f3;
@@ -20,9 +22,11 @@ h2 {
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 500px;
-  border-radius: 8px;
+  padding: 32px 23px;
+  text-align: center;
+  background: #1d1c19;
+  border-bottom: 2px solid #f7dd43;
+  border-radius: 6px;
   margin-bottom: 10px;
 }
 
@@ -65,7 +69,7 @@ section {
 
 .processos .follow {
   font-size: 20px;
-  color: #2d0bc5;
+  color: #ccc;
 }
 
 .processos .conteudos {
@@ -83,7 +87,6 @@ section {
 
 progress {
   margin-left: 50px;
-  
 }
 
 .processos .informacao-abas .informacao-da-aba {
@@ -169,23 +172,22 @@ progress {
   margin-top: 5px;
 }
 
-footer {
+.fone {
   font-size: 14px;
   line-height: 28px;
   text-align: center;
   margin-top: 80px;
+  margin-top: 50px;
+  background:none;
+  
 }
 
 button {
-  text-transform: uppercase;
-
-
   background: #1BD741;
   border: 0;
   border-radius: 4px;
   padding: 10px;
-  margin-left: 190px;
-  flex-direction: row;
+  
 
   display: flex;
   align-items: center;
@@ -193,6 +195,8 @@ button {
   gap: 10px;
 
   cursor:pointer;
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 button:hover {
@@ -207,12 +211,6 @@ p {
   font-size: 14px;
   text-align: center;
 }
-
-.fone {
-  margin-top: 50px;
-  background:none;
-}
-
 
 progress {
   width: 100px;
