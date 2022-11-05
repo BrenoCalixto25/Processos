@@ -17,17 +17,13 @@ body{
   padding: 30px;
 }
 
-h2 {
-  padding: 0 0 30px 0;
-}
-
 section {
   padding: 32px 23px;
   text-align: center;
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
   border-radius: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .processos img:hover {
@@ -179,8 +175,7 @@ progress {
   margin-top: 80px;
   margin-top: 50px;
   background:none;
-  
-}
+ }
 
 button {
   background: #1BD741;
@@ -196,7 +191,7 @@ button {
 
   cursor:pointer;
   margin-top: 10px;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 button:hover {
@@ -214,6 +209,7 @@ p {
 
 progress {
   width: 100px;
+  
 }
 
 .container {
@@ -278,4 +274,183 @@ progress {
 @keyframes progress-animation100 {
   0% {width: 0%;}
   100% {width: 100%;}
+}
+
+main section {
+  animation: fromTop .7s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0;
+}
+
+main section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+main section:nth-child(3) {
+  animation-delay: 2s;
+}
+
+main section:nth-child(4) {
+  animation-delay: 3s;
+}
+
+main section:nth-child(5) {
+  animation-delay: 4s;
+}
+
+main section:nth-child(6) {
+  animation-delay: 5s;
+}
+
+main section:nth-child(7) {
+  animation-delay: 6s;
+}
+
+main section:nth-child(8) {
+  animation-delay: 7s;
+}
+
+main section:nth-child(9) {
+  animation-delay: 8s;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+.carrosel {
+  -webkit-perspective: 250px;
+  -moz-perspective: 250px;
+  width: 400px;
+  height: 200px;
+  top: 50px;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 95px;
+}
+@-webkit-keyframes efeitoCarrosel {
+  from {
+      -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+      -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+      z-index: 10;
+      opacity: 1
+  }
+
+  50% {
+      z-index: -10;
+  }
+
+  to {
+      -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+      -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+      z-index: 10;
+      opacity: 1
+  }
+}
+
+@-moz-keyframes efeitoCarrosel {
+  from {
+      -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+      z-index: 10;
+      opacity: 1
+  }
+
+  50% {
+      z-index: -10;
+  }
+
+  to {
+      -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+      z-index: 10;
+      opacity: 1
+  }
+}
+
+.caixa__card {
+  width: 90px;
+  height: 100px;
+  background-color: #442222;
+  color: black;
+  position: absolute;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  left: 125px;
+  font-size: 9px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+  text-align: center;
+  -webkit-animation-name: efeitoCarrosel;
+  -moz-animation-name: efeitoCarrosel;
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+.caixa__card:hover {
+  border: solid #4466cc 3px;
+  box-shadow: 0px 0px 10px #4466cc;
+}
+
+.caixa__card.cc__1 {
+  background: linear-gradient(-229deg, #0093E9, #80D0C7);
+  -webkit-animation-delay: -7s;
+  -moz-animation-delay: -7s;
+}
+
+.caixa__card.cc__2 {
+
+  background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+  -webkit-animation-delay: -6s;
+  -moz-animation-delay: -6s;
+}
+
+.caixa__card.cc__3 {
+  
+  background: linear-gradient(-229deg, #50d990, #d4d054);
+  -webkit-animation-delay: -5s;
+  -moz-animation-delay: -5s;
+}
+
+.caixa__card.cc__4 {
+  background: linear-gradient(-229deg, #cf91ff, #5782F5);
+  -webkit-animation-delay: -4s;
+  -moz-animation-delay: -4s;
+}
+
+.caixa__card.cc__5 {
+  background: linear-gradient(-229deg, #642B73, #C6426E);
+  -webkit-animation-delay: -3s;
+  -moz-animation-delay: -3s;
+}
+
+.caixa__card.cc__6 {
+  background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+  -webkit-animation-delay: -2s;
+  -moz-animation-delay: -2s;
+}
+
+.caixa__card.cc__7 {
+  background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+}
+
+.caixa__card.cc__8 {
+  background: linear-gradient(-229deg, #1472ff, #A8EB12);
 }
