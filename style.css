@@ -17,6 +17,10 @@ body{
   padding: 30px;
 }
 
+.gif {
+  padding-bottom: 30px;
+}
+
 section {
   padding: 32px 23px;
   text-align: center;
