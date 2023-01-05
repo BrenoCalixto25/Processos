@@ -18,7 +18,7 @@ body{
 }
 
 .gif {
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 section {
@@ -172,7 +172,7 @@ progress {
   margin-top: 5px;
 }
 
-.fone {
+.fone, .whats {
   font-size: 14px;
   line-height: 28px;
   text-align: center;
@@ -216,26 +216,83 @@ progress {
 }
 
 .whats {
-  background: #1ABDA6;
+  background: #11d1ae;
   border: 0;
-  border-radius: 4px;
+  border-radius: 15px;
   padding: 10px;
+  position: relative;
+  border-bottom-left-radius: 0;
+  
+  display: flex;
+   
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.whats::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: inherit;
+
+  left: 0;
+  top: 100%;
+  width: 20px;
+  height: 10px;
+
+  clip-path: polygon(0 100%, 100% 0, 0 0);
+}
+
+/*button a:hover {
+  animation: efeito;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}*/
+
+.fone {
+  background: #1D3ED6;
+  border: 0;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  border-bottom-right-radius: 0;
   
 
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-
-  cursor:pointer;
-  margin-top: 10px;
-  margin-left: 200px;
+  flex-direction: column;
+  gap: 20px;
+ 
 }
 
-button:hover {
-  background: #4ea788;
-  display: flex;
+.fone::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: inherit;
+
+  right: 0;
+  top: 100%;
+  width: 20px;
+  height: 10px;
+
+  clip-path: polygon(0 0%, 100% 0, 100% 100%);
 }
+
+.fone, .whats {
+  animation: fromTop .7s backwards;
+}
+
+.fone {
+  animation-delay: 11s;
+}
+
+.whats {
+  animation-delay: 12s;
+}
+
+
 
 button, a {
   color: white;
@@ -355,6 +412,15 @@ main section:nth-child(9) {
   animation-delay: 8s;
 }
 
+main section:nth-child(10) {
+  animation-delay: 9s;
+}
+
+main section:nth-child(11) {
+  animation-delay: 10s;
+}
+
+
 @keyframes fromTop {
   from {
     opacity: 0;
@@ -367,7 +433,7 @@ main section:nth-child(9) {
   }
 }
 
-.carrosel {
+/*.carrosel {
   -webkit-perspective: 250px;
   -moz-perspective: 250px;
   width: 400px;
@@ -415,7 +481,7 @@ main section:nth-child(9) {
   }
 }
 
-.caixa__card {
+/*caixa__card {
   width: 90px;
   height: 100px;
   background-color: #442222;
@@ -492,5 +558,7 @@ main section:nth-child(9) {
 
 .caixa__card.cc__8 {
   background: linear-gradient(-229deg, #1472ff, #A8EB12);
-}
+}*/
+
+
 
