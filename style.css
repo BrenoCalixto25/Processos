@@ -433,6 +433,31 @@ main section:nth-child(11) {
   }
 }
 
+/*@media (min-width: 500px) {
+
+  body {
+    padding: 8rem;
+    background-image: url(./image/Capa.png);
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+}*/
+
 /*.carrosel {
   -webkit-perspective: 250px;
   -moz-perspective: 250px;
